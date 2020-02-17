@@ -1,0 +1,22 @@
+
+body{
+	background-image:url("/home/6CSE1/Downloads/images1.jpeg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	}
+h1,h2{
+	color:maroon;
+	margin-left:10px;
+  }
+P{
+	color:green;
+	margin-left:10px;
+  }
+p.normal{
+	text-align:center;
+ 	color:red;
+	}
+p.warning
+	{
+	color:black;
+	}
