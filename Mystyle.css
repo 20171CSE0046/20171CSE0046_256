@@ -5,11 +5,11 @@ body{
 	background-size: cover;
 	}
 h1,h2{
-	color:maroon;
+	color:#6a1577;
 	margin-left:10px;
   }
 P{
-	color:green;
+	color:#bb1581;
 	margin-left:10px;
   }
 p.normal{
@@ -20,3 +20,294 @@ p.warning
 	{
 	color:black;
 	}
+p.%
+	{
+	font-size:10pt;
+	}
+p.%1
+	{
+	line-height:150%;
+	}
+#id1
+	{
+	text-align:center;
+ 	color:red;
+	}
+.mycolor
+	{
+	color:green;
+	margin-left:5px;
+	}
+p.ambika
+	{
+	border-style:dotted;
+	}
+p.dashed
+	{
+	border-style:dashed;
+	}
+p.solid
+	{
+	border-style:solid;
+	}
+p.double
+	{
+	border-style:double;
+	}
+p.groove
+	{
+	border-style:groove;
+	}
+p.ridge
+	{
+	border-style:ridge;
+	}
+p.inset
+	{
+	border-style:inset;
+	}
+p.outset
+	{
+	border-style:outset;
+	}
+p.none
+	{
+	border-style:none;
+	}
+p.hidden
+	{
+	border-style:hidden;
+	}
+p.one
+	{
+	border-style:solid;
+	border-width:5px;
+	border-color:purple;
+	}
+p.two
+	{
+	border-style:solid;
+	border-width:medium;
+	border-color:red;
+	}
+p.three
+	{
+	border-style:solid;
+	border-width:2px 10px 4px 20px;
+	border-color:red green blue yellow;
+	}
+
+p.a
+{
+border-top-style:dotted;
+border-right-style:solid;
+	border-bottom-style:ridge;
+	border-left-style:solid;
+	}
+p.b
+	{
+	border-left:6px solid red;
+	background-color:red;
+	}
+p.c
+	{
+	margin:25px 50px 75px 100px;
+	}
+p.d
+	{
+	margin:auto;
+	width:300px;
+	border:1px solid red;
+	padding:25px 30px 40px 50px;
+	width:300px;
+	}
+p.e
+	{
+	padding:25px;
+	width:300px;
+	}
+p.f
+	{
+	width:300px;
+	border:25px solid red;
+	padding:25px;
+	margin:25px;
+	}
+p.ex2
+	{
+	display:inline;
+	}
+p.ex3
+	{
+	display: block;
+	}
+span
+	{
+	display:block;
+	}
+.a
+	{
+	display:inline;
+	width:100px;
+	height:100px;
+	padding:5px;
+	border:1px solid blue;
+	background-color:yellow;
+	}
+.b
+	{
+	display:inline-block;
+	width:100px;
+	height:200px;
+	padding:5px;
+	border:1px solid blue;
+	background-color:yellow;
+	}
+.c
+	{
+	display:block;
+	width:100px;
+	height:200px;
+	padding:5px;
+	border:1px solid blue;
+	background-color:yellow;
+	}
+P.a
+	{
+	background-color:purple;
+  	color: white;
+  	padding: 10px 20px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	}
+P.a1
+	{
+	border-style:solid;
+	padding:10px 10px 10px 10px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+	}
+a:link{color:red;}
+a:visited{color:green;}
+a:hover{color:blue;}
+a:active{color:hotpink;}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+#first {
+  width: 900px;
+  height: 100px;
+  background: grey;
+  position: relative;
+  margin:50px;
+}
+#first:after{
+  content:'';
+  background:blue;
+  position:absolute;
+  top:-20px;
+  left:-20px;
+  right:-20px;
+  bottom:-20px;
+  z-index:-1;
+}
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+}
+h1::before
+	{
+	content:url("/home/6CSE1/Downloads/index.png")
+	}
+h1::after
+	{
+	content:url("/home/6CSE1/Downloads/index.png")
+	}
+::selection{color:red; background:yellow;}
+#grad2
+	{
+	background-image:linear-gradient(red,yellow,green);
+	}
+#grad3
+	{
+	background-image:linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+	}
+
+#am{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s,height 4s;
+}
+
+#am:hover {
+  width: 300px;
+  height:300px;
+}
+#ambika{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s,height 4s,transform 2s;
+}
+
+#ambika:hover {
+  width: 300px;
+  height:300px;
+  transform:rotate(180deg);
+}
+#ar{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration:10s;
+}
+
+@keyframes example {
+  from {background-color:purple;}
+  to {background-color: yellow;}
+}
+#ra{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name:ammu;
+  animation-duration:6s;
+}
+
+@keyframes ammu{
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 5px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
